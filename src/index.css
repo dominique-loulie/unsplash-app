@@ -1,0 +1,137 @@
+/* Reset some default styling */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
+  background-color: #e5e5e5;
+  font-size: calc(10px + 2vmin);
+  color: #FF0000;
+}
+
+/* Image styling */
+img {
+  width: 100%;
+  border: 14px; 
+}
+
+/* Photo list layout */
+.photo-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 3rem;
+  margin: 2%;
+}
+
+/* Search form styling */
+.search-form {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(5px);
+}
+
+@media (max-width: 600px) {
+  .search-form input {
+    width: 60vw;
+  }
+}
+
+input {
+  background: white;
+}
+
+button {
+  background: #55198b;
+  color: #fff;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #fe63d9;
+  transition: 0.3s;
+  color: black;
+  font-weight: bold;
+}
+
+/* Common input and button styles */
+input,
+button {
+  padding: 0.5rem;
+  border: 0;
+  font-size: 1.25rem;
+  font-family: sans-serif;
+}
+
+/* Header navigation links */
+header nav a {
+  text-decoration: none;
+  color: #0b3d91;
+  padding: 20px;
+}
+
+header nav a.active {
+  color: #fe63d9;
+}
+
+/* Main content styles */
+main {
+  font-size: 1.25rem;
+  color: black;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+main a {
+  text-decoration: none;
+  padding: 20px;
+  color: #0b3d91;
+}
+
+main a.active {
+  color: #fe63d9;
+}
+
+/* Question text */
+.questions {
+  color: darkgrey;
+}
+
+/* Remove underlines from links */
+a {
+  text-decoration: none;
+}
+
+/* Username styling */
+.username {
+  font-size: 1rem;
+  color: black;
+}
+
+/* Like count styling */
+.like {
+  font-size: 20px;
+  color: #55198b;
+}
+
+
+/* Add your existing CSS styles here */
+
+.add-button {
+  background-color: #55198b; /* Change this to the desired color */
+  color: white; /* You might need to adjust the text color for visibility */
+  font-weight: bold;
+}
+
+.remove-button {
+  background-color: rgb(34, 239, 128); /* Change this to the desired color */
+  color: black; /* You might need to adjust the text color for visibility */
+  font-weight: bold;
+}
